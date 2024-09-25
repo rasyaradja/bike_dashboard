@@ -9,7 +9,7 @@ st.set_page_config(page_title="Rasya Bike Sharing", layout="wide")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('./data/day.csv')
+    df = pd.read_csv('day.csv')
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
 
